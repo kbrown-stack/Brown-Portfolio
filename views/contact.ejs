@@ -1,0 +1,151 @@
+<%- include('./partials/header') %>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Contact Me</h1>
+    <p>Get in touch for collaborations, opportunities, or just to say hello</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Let's Connect</h2>
+        <p>
+          I'm always interested in hearing about new projects, opportunities, or
+          just connecting with fellow developers. Feel free to reach out through
+          any of the channels below or by using the contact form.
+        </p>
+
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="method-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="method-details">
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:your.email@example.com"
+                  >kbrownonuigbo@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="method-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="method-details">
+              <h3>LinkedIn</h3>
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/brown-onuigbo-2146208a/"
+                  target="_blank"
+                  >linkedin.com/in/Brown Onuigbo</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="method-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="method-details">
+              <h3>GitHub</h3>
+              <p>
+                <a href="https://github.com/kbrown-stack" target="_blank"
+                  >GitHub.com/Brown Onuigbo</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="method-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="method-details">
+              <h3>Chester-le-Street</h3>
+              <p>Durham, England</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-container">
+        <h2>Send Me a Message</h2>
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary submit-btn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-loader" style="display: none">
+              <i class="fas fa-spinner fa-spin"></i>
+            </span>
+          </button>
+
+          <div class="form-message"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>What types of projects do you typically work on?</h3>
+          <div class="toggle-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-answer">
+          <p>
+            I specialize in full-stack web applications, particularly those
+            built with Node.js, Express, MongoDB,SQL, PHP, and JavaScript. I've
+            worked on a variety of projects including e-commerce platforms,
+            content management systems, data visualization dashboards, and
+            API-driven applications.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Are you available for freelance projects?</h3>
+          <div class="toggle-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Yes, I am available for freelance projects, consulting, and
+            volunterring
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include('./partials/footer') %>

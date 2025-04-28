@@ -1,0 +1,144 @@
+<%- include('./partials/header') %>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <img
+        src="/assets/images/mypic.JPG"
+        alt="Brown Onuigbo"
+        class="profile-img"
+      />
+      <h1>Hello, I'm <span class="highlight">Brown Onuigbo</span></h1>
+      <h2>Software Engineer</h2>
+      <p>Specializing in Node.js, Express, MongoDB,SQL, PHP, Vue.js and JavaScript</p>
+      <div class="hero-buttons">
+        <a href="/projects" class="btn btn-primary">View Projects</a>
+        <a href="/contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="featured-skills">
+  <div class="container">
+    <h2 class="section-title">Skills & Expertise</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <i class="fab fa-node"></i>
+        <h3>Node.js</h3>
+        <p>
+          Building scalable and high-performance server-side applications using
+          Node
+        </p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-server"></i>
+        <h3>Express</h3>
+        <p>Creating robust APIs and web applications with Express framework.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-server"></i>
+        <h3>HTML & CSS</h3>
+        <p>
+          Building structured and accessible web pages using HTML, and styling
+          them with CSS to create responsive, visually engaging user interfaces.
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-server"></i>
+        <h3>Vue.js</h3>
+        <p>
+          Building dynamic, reactive, and high-performance user interfaces with Vue.js for modern web applications.
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-server"></i>
+        <h3>JavaScript</h3>
+        <p>
+          Powering rich user experiences and server-side logic with versatile
+          scripting.
+        </p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-database"></i>
+        <h3>MongoDB & SQL</h3>
+        <p>Designing and implementing NoSQL/SQL database solutions.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-php"></i>
+        <h3>PHP</h3>
+        <p>Developing dynamic websites and backend systems with PHP.</p>
+      </div>
+    </div>
+    <div class="center-btn">
+      <a href="/skills" class="btn btn-secondary">All Skills</a>
+    </div>
+  </div>
+</section>
+
+<section class="featured-projects">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-container" id="featured-projects">
+
+      <!-- Projects will be loaded here via JavaScript -->
+      <div class="loading">Loading projects...</div>
+    </div>
+    <div class="center-btn">
+      <a href="/projects" class="btn btn-primary">All Projects</a>
+    </div>
+  </div>
+</section>
+
+<section class="experience-overview">
+  <div class="container">
+    <h2 class="section-title">Professional Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Software Engineer/Application Support</h3>
+          <h4>HCLTech UK</h4>
+          <p class="timeline-date">2023 - Present</p>
+          <p>Responsible for designing, developing, and maintaining server-side applications using Node.js and Express. Built RESTful APIs, integrated MongoDB databases for efficient data storage, and optimized application performance. Collaborated with front-end teams to deliver seamless user experiences and ensured best practices in security, scalability, and code quality.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Software Developer</h3>
+          <h4>Luzoma Microsystems</h4>
+          <p class="timeline-date">2019 - 2023 &nbsp; | &nbsp; Remote</p>
+          <p>Developed and implemented software solutions, wrote clean and efficient code, and actively contributed to application development projects. Resolved bug issues promptly based on client or user feedback, participated in team meetings with valuable input, and ensured proper documentation of projects and code for future scalability and maintenance.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Software Developer</h3>
+          <h4>Imprint Group</h4>
+          <p class="timeline-date">2022 - 2023 &nbsp; | &nbsp; 6-Month Contract</p>
+          <p>Rewrote and modernized legacy application scripts using Vue.js and PHP to align with user needs and industry standards. Successfully implemented new features, enhanced existing functionalities, and optimized application performance for better scalability and user experience.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="center-btn">
+      <a href="/experience" class="btn btn-secondary">Full Experience</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact-cta">
+  <div class="container">
+    <h2>Let's Work Together</h2>
+    <p>Have a project in mind or interested in working together?</p>
+    <a href="/contact" class="btn btn-primary">Get In Touch</a>
+  </div>
+</section>
+
+<%- include('./partials/footer') %>
