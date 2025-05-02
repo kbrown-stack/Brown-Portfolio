@@ -38,7 +38,7 @@ router.post('/projects', async (req, res) => {
       technologies,
       imageUrl,
       projectUrl,
-      // githubUrl,
+      githubUrl,
       featured,
       order
     } = req.body;
@@ -50,7 +50,7 @@ router.post('/projects', async (req, res) => {
       technologies,
       imageUrl,
       projectUrl,
-      // githubUrl,
+      githubUrl,
       featured,
       order
     });
@@ -64,7 +64,7 @@ router.post('/projects', async (req, res) => {
 });
 
 
-// Get a specific project (public)
+// Get a specific project by ID
 router.get('/projects/:id', async (req, res) => {
   try {
     const project = await Project.findById(req.params.id);
@@ -80,5 +80,27 @@ router.get('/projects/:id', async (req, res) => {
     res.status(500).json({ message: 'Server Error' });
   }
 });
+
+
+// Update Project 
+router.put('/projects/:id', async (req, res) => {
+  try {
+    const updatedProject = await Project.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true, runValidators: true }
+    );
+
+    if (!updatedProject) {
+      return res.status(404).json({ message: 'Project not found' });
+    }
+
+    res.json({ message: 'Project updated successfully', project: updatedProject });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: 'Server Error - Unable to update project' });
+  }
+});
+
 
 module.exports = router;
