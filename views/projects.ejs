@@ -84,7 +84,7 @@
           ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
         </div>
         <div class="project-links">
-          ${project.githubLink ? `<a href="${project.githubLink}" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>` : ''}
+          ${project.githubUrl ? `<a href="${project.githubUrl}" class="project-link" target="_blank"><i class="fab fa-github"></i> Github</a>` : ''}
           ${project.demoLink ? `<a href="${project.demoLink}" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>` : ''}
         </div>
       </div>

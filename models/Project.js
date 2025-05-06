@@ -21,6 +21,9 @@ const ProjectSchema = new mongoose.Schema({
   projectUrl: {
     type: String
   },
+  githubUrl: {
+    type: String,
+  },
   // demoLink: {
   //   type: String
   // },
